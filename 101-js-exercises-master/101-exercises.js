@@ -693,8 +693,8 @@ function isOneOrTwoOrThree(x) {
 // Exercise 43
 // Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
 
-function isVowel(char) {
-    return ['a', 'e', 'i', 'o', 'u'].indexOf(char.toLowerCase()) !== -1;
+function isVowel(input) {
+    return
 }
 
 assert(isVowel("a"), true, "Exercise 43");
