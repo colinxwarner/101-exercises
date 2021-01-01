@@ -694,8 +694,9 @@ function isOneOrTwoOrThree(x) {
 // Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
 
 function isVowel(input) {
-    return
-}
+    function isVowel(x) {
+        return ('aeiouAEIOU'.indexOf(x) !== -1);
+    }
 
 assert(isVowel("a"), true, "Exercise 43");
 assert(isVowel("U"), true, "Exercise 43");
@@ -776,7 +777,7 @@ function endsWithVowel(str) {
     var jString = reverseArray.join("");
     if(!isVowel(jString[0])); {
         return false;
-    } else {
+ //   } else {
         return true
     }
 
@@ -1385,5 +1386,6 @@ assert(mostSpentOnItem(shoppingCart), {
     "title": "chocolate",
     "price": 0.75,
     "quantity": 9
-}, "Exercise 101");
-addToDone("Exercise 101 is complete.")
+    }, "Exercise 101");
+addToDone("Exercise 101 is complete.");
+}
